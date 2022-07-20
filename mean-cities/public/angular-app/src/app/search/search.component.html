@@ -1,0 +1,7 @@
+
+<input name="cityName" [(ngModel)]="cityName"/> 
+<button (click)="find()">Find</button>
+
+<div>
+    <p *ngFor="let city of filteredCities">{{city.city}}</p>
+</div>
