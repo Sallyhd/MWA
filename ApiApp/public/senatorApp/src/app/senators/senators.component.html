@@ -1,0 +1,9 @@
+
+
+<ul>
+    <li *ngFor="let senator of senators"><a routerLink="/senators/{{senator._id}}">
+        {{senator.person.firstname}} - {{senator.person.lastname}}</a>
+        <button (click)="delete(senator._id)">Delete</button>
+    
+    </li>
+</ul>
